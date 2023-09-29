@@ -19,7 +19,7 @@ func DeleteMovieController(c echo.Context) error {
 	if result.Error != nil {
 		return c.JSON(http.StatusInternalServerError, base.BaseResponse{
 			Status:  false,
-			Message: "Failed add data to database",
+			Message: "Failed delete data from database",
 			Data:    nil,
 		})
 	}
